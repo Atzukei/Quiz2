@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.Hb-short{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+.Header-box {
+    display: flex;
+    gap: 20px;
+}
+
+.Header-box2 {
+    display: flex;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+i {
+    font-size: 30px;
+}
+
+body {
+    background-image: url(anime-code-geass-lamperouge-lelouch-red-wallpaper.jpg);
+    background-size: cover;
+    
+}
+.hr1 {
+    width: 90%;
+    margin: 0 auto;
+}
+.CN{
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 50px;
+    letter-spacing: 0;
+}
+
+.CN span {
+    font-size: inherit;
+}
+.MainSection {
+    width: 100%;
+    height: auto;
+    background-color: rgb(30, 29, 29);
+
+}
+.SubSection{
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    
+    margin: 0 auto;
+}
+.Section1 {
+    width: 50%;
+    height: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    
+}
+.Section2{
+    width: 50%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    
+  
+}
+
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    border: 1px solid white;  
+}
+
+
+
+@media (max-width: 1024px) {
+    .SubSection {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: auto;
+    }
+
+    .Section1 {
+        width: 100%; 
+        height: auto;
+    }
+
+    .Section2 {
+        display: contents; 
+        
+    }
+    .Header-box2{
+        display: none;
+    }
+
+    .Myhome {
+        width: 100%; 
+        height: auto;
+    }
+    .Hb-short{
+        display: contents;
+    }
+}
+
+
+
+
+@media (max-width: 500px){
+    .SubSection {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .Section1 {
+        width: 100%; 
+    }
+    .Header-box2{
+        display: none;
+    }
+    .Hb-short{
+        display: contents;
+    }
+
+    
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%; 
+        border: 1px solid white;  
+    }
+    .Section2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto); 
+    }
+}
+
